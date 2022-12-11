@@ -17,6 +17,7 @@ app.get('/', (request, response) => {
 
   app.get('/categorias', db.getCategorias)
   app.post('/create', db.createCategoria)
+  app.delete('/categoria/:id', db.deleteCategoria)
 
 
 
