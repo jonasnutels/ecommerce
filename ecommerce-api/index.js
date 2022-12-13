@@ -12,12 +12,13 @@ app.use(
 )
 
 app.get('/', (request, response) => {
-    response.json({ info: 'Node.js, Express, and Postgres API' })
+    response.json('E-Commerce  teste' )
   })
 
   app.get('/categorias', db.getCategorias)
   app.post('/create', db.createCategoria)
   app.delete('/categoria/:id', db.deleteCategoria)
+  app.post('/registro', db.createUsuario)
 
 
 
